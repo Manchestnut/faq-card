@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+  <img src="images/illustration-woman-online-mobile.svg" id="mobile-img">
+  <img src="images/illustration-woman-online-desktop.svg" id="desktop-img">
+  <div class="container">
+    <div class="card">
+    <h1>FAQ</h1>
+    <div class="rows" id="row-1"><p id="q1" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">How many team members can I invite?</p>
+      <img src="images/icon-arrow-down.svg" id="button-1">
+    </div>
+    <div id="dropdown-1" class="dropdown">You can invite up to 2 additional users on the Free plan. There is no limit on 
+      team members for the Premium plan.</div>
+    <div class="line"></div>
+
+    <div class="rows" id="row-2"><p id="q2">What is the maximum file upload size?</p>
+      <img src="images/icon-arrow-down.svg" id="button-2">
+    </div>
+      <div id="dropdown-2" class="dropdown">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+    <div class="line"></div>
+
+    <div class="rows" id="row-3"><p id="q3">How do I reset my password?</p>
+      <img src="images/icon-arrow-down.svg" id="button-3">
+    </div>
+      <div id="dropdown-3" class="dropdown">Click “Forgot password” from the login page or “Change password” from your profile page.
+      A reset link will be emailed to you.</div>
+    <div class="line"></div>
+
+    <div class="rows" id="row-4"><p id="q4">Can I cancel my subscription?</p>
+      <img src="images/icon-arrow-down.svg" id="button-4">
+    </div>
+      <div id="dropdown-4" class="dropdown">Yes! Send us a message and we’ll process your request no questions askedd</div>
+    <div class="line"></div>
+
+    <div class="rows" id="row-5"><p id="q5">Do you provide additional support?</p>
+      <img src="images/icon-arrow-down.svg" id="button-5">
+    </div>
+      <div id="dropdown-5" class="dropdown">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+    <div class="line"></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

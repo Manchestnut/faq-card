@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  background: white;
+  padding-top: 100px;
+  min-width: 90%;
+  max-width: 90%;
+  margin-inline: auto;
+  padding-inline: 15px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.container h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.container button {
+  border: none;
+  background: none;
+}
+
+.container button:hover {
+  cursor: pointer;
+}
+
+.container .rows {
+  padding-block: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #1d1e35;
+}
+
+.container .rows img {
+  width: 12px;
+  height: 9px;
+}
+
+.container p,
+.container img {
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  line-height: 20px;
+  color: #5f5f5f;
+  font-weight: normal;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.line {
+  border-bottom: 1px solid rgba(169, 169, 169, 0.856);
+}
+
+#mobile-img {
+  position: relative;
+  left: 30px;
+  top: 95px;
+  z-index: 2;
+}
+
+#desktop-img {
+  display: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 50px;
+  }
+  .container .card {
+    width: 50%;
+  }
+  .container .card h1 {
+    text-align: start;
+  }
+  #mobile-img {
+    display: none;
+  }
+  #desktop-img {
+    position: relative;
+    display: block;
+    width: 350px;
+    top: 325px;
+    right: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
